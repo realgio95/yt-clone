@@ -13,3 +13,17 @@ Now, to run the image, use the docker run command:
 
 The -p flag redirects a public port to a private port inside the container.
 The -d flag runs the container in detached mode, leaving the container running in the background.
+
+## Clean Up
+To list the running containers run:
+`docker ps`
+
+To stop a running container run:
+
+`docker stop <container-id-or-name>`
+
+To list all containers, even those that have been stopped, run:
+`docker ps -a`
+
+To remove a container run:
+`docker rm <container-id-or-name>`
