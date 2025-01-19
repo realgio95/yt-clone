@@ -27,3 +27,9 @@ To list all containers, even those that have been stopped, run:
 
 To remove a container run:
 `docker rm <container-id-or-name>`
+
+## Copy file from local to docker container file system
+docker cp ./intro.mov containername:/app/process-intro-vid.mov
+
+## Copy file docker container file system to local file system
+docker cp containername:/app/processed-intro-vid.mov ./
